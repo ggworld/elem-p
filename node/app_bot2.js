@@ -52,7 +52,13 @@ bot.on('text', (ctx) => {
 	  case 'blabla':
 		  out_msg='????';
 		  break;
-          default:
+	  case 'אני שירה':
+		  out_msg='פשושקלה מה המצב?';
+		  break;
+	  case 'נוה':
+		  out_msg='באבא גנוש !!!!';
+		  break;
+	  default:
 		  out_msg="מאמי אני על זה";
 		  break;
  /*                 console.log(msg_txt);
@@ -110,7 +116,7 @@ async function postData(url = '', data = {}) {
   return response.json(); // parses JSON response into native JavaScript objects
 }
 
-postData('http://ec2-3-65-182-5.eu-central-1.compute.amazonaws.com:53000/command', { text: "make page" })
+postData('http://ec2-18-159-96-44.eu-central-1.compute.amazonaws.com:53000/command', { text: "make page" })
   .then(data => {
     console.log(data); // JSON data parsed by `data.json()` call
   });
